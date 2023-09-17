@@ -3,7 +3,7 @@
 class GradeWeights:
     """
     Specifies the weights assigned to each grade
-    catefory for ENPM611. The weights can be found
+    category for ENPM611. The weights can be found
     in the introductory slides and in the syllabus.
     """
     

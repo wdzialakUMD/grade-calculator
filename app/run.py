@@ -24,8 +24,12 @@ else:
     letter_grade = GradeCalculator.calculate_letter_grade(percentage_grade)
     print(f'The letter grade with an overall {percentage_grade*100}% is {letter_grade}')
 
-# Calculate the grade assuming that all assignmets not turned in yet, will be 100%
+# Calculate the grade assuming that all assignments not turned in yet, will be 100%
 optimistic_percentage_grade = GradeCalculator.calculate_optimistic_course_percentage(my_grades, weights)
 optimistic_letter_grade = GradeCalculator.calculate_letter_grade(optimistic_percentage_grade)
 print(f'If all other assignments are 100%, the overall course would be {optimistic_percentage_grade*100}%, which is a {optimistic_letter_grade}')
+
+# Calculate the minimum average points on ungraded assignments to still receive an A using previous information
+minimum_average_assignment_points = GradeCalculator.calculate_minimum_average_points(my_grades, weights)
+print(f'Using current grades, the minimum average points needed on remaining assignments to receive an A is {minimum_average_assignment_points}')
 

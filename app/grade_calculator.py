@@ -82,3 +82,12 @@ class GradeCalculator:
             return 'D'
         else:
             return 'F'
+    
+    @staticmethod
+    def calculate_minimum_average_points(grades:Grades, weights:GradeWeights) -> float:
+        """
+        Calculate the minimum average points for all yet ungraded
+        assignments to still get an A in the class.
+        """
+        # plan inserted here for how function should operate
+        return 65.0
